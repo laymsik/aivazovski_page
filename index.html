@@ -28,12 +28,48 @@
                         <a href="#portfolio-id" class="nav__link" aria-label="link to portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#" class="nav__link" aria-label="link to contacts">Contacts</a>
+                        <a href="#contacts-id" class="nav__link" aria-label="link to contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <div class="mobile-navigation" aria-label="mobile-navigation">
+        <label for="toggler-id" aria-label="open-close mobile-navigation menu">
+            <svg class="mobile-navigation-burger" aria-label="burger icon">
+                <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+
+        <nav class="mobile-navigation-menu" aria-label="mob header navigation">
+            <ul class="mobile-navigation-list" aria-label="mob header navigation list">
+                <li>
+                    <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+                </li>
+                <li>
+                    <a href="#about-id" class="mobile-navigation-link" aria-label="link to about">About</a>
+                </li>
+                <li>
+                    <a href="#history-id" class="mobile-navigation-link" aria-label="link to history">History</a>
+                </li>
+                <li>
+                    <a href="#portfolio-id" class="mobile-navigation-link" aria-label="link to portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contacts-id" class="mobile-navigation-link" aria-label="link to contacts">Contacts</a>
+                </li>
+            </ul>
+
+            <label for="toggler-id" class="mobile-navigation-close" aria-label="open-close mobile-navigation menu">
+                <svg class="mobile-navigation-cross" aria-label="cross icon">
+                    <use href="assets/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
 
     <main aria-label="main">
         <section class="home" aria-label="home section" id="home-id">
@@ -78,8 +114,29 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="contacts" aria-label="contacts section" id="contacts-id">
+        <div class="container">
+            <h2 class="contacts__title">Contacts</h2>
+            <button class="contacts__button">
+                <a href="https://ayvazovskiy.su" class="button__link">ayvazovskiy.su</a>
+            </button>
 
+            <address class="socials" aria-label="social icons">
+                <a href="#">
+                   <img src="assets/icon/YouTube_ICO.svg" alt="youtube" class="icon">
+                </a>
+                <a href="#">
+                   <img src="assets/icon/Linkedin_ICO.svg" alt="linkedin" class="icon">
+                </a>
+                <a href="#">
+                   <img src="assets/icon/Instagram_ICO.svg" alt="instagram" class="icon">
+                </a>
+                <a href="#">
+                   <img src="assets/icon/Facebook_ICO.svg" alt="facebook" class="icon">
+                </a>
+            </address>
+            <p class="contacts__info" aria-label="just for notice">More works you can see in these social networks</p>
+        </div>
     </footer>
 </body>
 </html>
